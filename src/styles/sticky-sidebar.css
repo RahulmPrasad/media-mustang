@@ -1,0 +1,6 @@
+/* Sticky blog sidebar (replaces the theia-sticky-sidebar jQuery plugin) */
+.sticky-coloum-item .theiaStickySidebar {
+    position: sticky;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}

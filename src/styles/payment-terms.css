@@ -1,0 +1,238 @@
+/* Payment terms section (pricing page) */
+.payment-terms-area {
+    padding: 40px 0 120px;
+}
+
+.payment-terms-header {
+    max-width: 720px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.payment-terms-header .pre {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    background: rgba(255, 205, 5, 0.18);
+    color: #e08a00;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.payment-terms-header .title {
+    margin-bottom: 20px;
+    color: var(--color-title);
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.payment-terms-header .disc {
+    margin-bottom: 28px;
+    color: var(--color-body);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.payment-terms-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 22px;
+    border: 1px solid var(--color-border-2);
+    border-radius: 100px;
+    font-size: 15px;
+}
+
+.payment-terms-breadcrumb a {
+    color: var(--color-body);
+    transition: color 0.3s;
+}
+
+.payment-terms-breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.payment-terms-breadcrumb i {
+    color: var(--color-border);
+    font-size: 11px;
+}
+
+.payment-terms-breadcrumb span {
+    color: var(--color-title);
+    font-weight: 600;
+}
+
+.payment-terms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.payment-terms-card {
+    position: relative;
+    margin: 0;
+    padding: 36px 32px;
+    border: 1px solid var(--color-border-2);
+    border-radius: 16px;
+    background: var(--pricing-bg-single);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.payment-terms-card:hover {
+    transform: translateY(-6px);
+    border-color: transparent;
+    box-shadow: 0 24px 48px rgba(38, 38, 44, 0.08);
+}
+
+.payment-terms-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.payment-terms-card .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--color-gradient-5);
+    color: #fff;
+    font-size: 22px;
+}
+
+.payment-terms-card .number {
+    color: var(--color-border-2);
+    font-family: var(--font-primary);
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1;
+    transition: color 0.3s;
+}
+
+.payment-terms-card:hover .number {
+    color: var(--color-primary);
+}
+
+.payment-terms-card .title {
+    margin-bottom: 12px;
+    color: var(--color-title);
+    font-size: 22px;
+}
+
+.payment-terms-card .disc {
+    margin: 0;
+    color: var(--color-body);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.payment-terms-help {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 36px 44px;
+    border-radius: 16px;
+    background: var(--color-secondary);
+}
+
+.payment-terms-help .title {
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.payment-terms-help .disc {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.payment-terms-help .actions {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 28px;
+}
+
+.payment-terms-help .call-us {
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.payment-terms-help .call-us:hover {
+    color: #ffcd05;
+}
+
+.payment-terms-help .call-us i {
+    margin-right: 6px;
+    color: #ffcd05;
+}
+
+[data-theme=dark] .payment-terms-card {
+    background: #111;
+}
+
+[data-theme=dark] .payment-terms-card:hover {
+    border-color: var(--color-border-2);
+    box-shadow: none;
+}
+
+[data-theme=dark] .payment-terms-help {
+    border: 1px solid var(--color-border-2);
+    background: #111;
+}
+
+@media (max-width: 1199px) {
+    .payment-terms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .payment-terms-area {
+        padding: 20px 0 80px;
+    }
+
+    .payment-terms-header {
+        margin-bottom: 40px;
+    }
+
+    .payment-terms-header .title {
+        font-size: 42px;
+    }
+
+    .payment-terms-header .disc {
+        font-size: 16px;
+    }
+
+    .payment-terms-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .payment-terms-card {
+        padding: 28px 24px;
+    }
+
+    .payment-terms-help {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 24px;
+    }
+
+    .payment-terms-help .actions {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

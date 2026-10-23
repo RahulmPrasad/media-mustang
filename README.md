@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Media Mustang
 
-## Getting Started
-
-First, run the development server:
+Next.js (App Router) rebuild of the static HTML site in `../reference`, with the same markup, class names and styles.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| Route      | Reference page     |
+| ---------- | ------------------ |
+| `/`        | `index.html`       |
+| `/pricing` | `pricing.html`     |
+| `/blog`    | `blog-grid-2.html` |
+| `/contact` | `contact.html`     |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structure
 
-## Learn More
+```
+src/
+  app/                  pages, root layout, api/contact (form endpoint)
+  components/
+    layout/             headers, footers, side menu, preloader, theme switcher, SiteEffects (GSAP, sticky header)
+    common/             SwiperSlider, Accordion, Counter, VideoPopup, RecentBlog, shared FAQ data
+    home/ pricing/ blog/ contact/   one file per page section
+  styles/
+    vendor/             bootstrap, swiper, metismenu, magnific-popup, fontawesome (from the template)
+    theme.css           the template's style.css
+    footer-home.css     the home footer styles (an inline <style> block in index.html)
+    sticky-sidebar.css  blog sidebar
+public/assets/          images and fonts, same paths as the reference
+```
 
-To learn more about Next.js, take a look at the following resources:
+The template's jQuery plugins are replaced by React components and hooks: Swiper 8 (same version as the template), Bootstrap accordion, metisMenu, counterUp, magnific-popup, theia-sticky-sidebar, and the GSAP / SplitText animations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`/api/contact` only validates the form and logs it. Connect an email service there to actually send messages.

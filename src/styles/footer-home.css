@@ -1,0 +1,224 @@
+
+.cgqhmx {
+transition: transform 1.5s;
+display: block;
+padding-right: 15px;
+}
+
+.cgqhmx:first-letter {
+text-transform: uppercase;
+}
+
+.spanbg {
+transition: transform 1.5s;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 0;
+background: #cdeff5;
+}
+
+.neg {
+transform: translate(100%, -100%);
+-webkit-transform: translateX(-103%);
+-ms-transform: translateX(-103%);
+opacity: 0;
+}
+
+.alst {
+transition: transform 1.5s;
+display: -webkit-inline-box;
+display: -webkit-inline-flex;
+display: -ms-inline-flexbox;
+display: inline-flex;
+-webkit-align-items: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: start;
+-webkit-justify-content: flex-start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+position: relative;
+font-family: 'National 2', sans-serif;
+font-size: 14px;
+line-height: 1.2;
+font-weight: 500;
+color: #000;
+cursor: pointer;
+opacity: 1;
+overflow: hidden;
+}
+
+.ftrlist ul {
+padding: 0px !important;
+list-style: none;
+}
+
+.ftrlist ul li a h6,
+.ftrlist ul li a {
+color: #ffffff;
+font-size: 14px;
+/* font-family: roboto-slab-light; */
+}
+
+.ftrlist ul li {
+margin-bottom: 0px;
+width: fit-content;
+}
+
+.ftr-titel p {
+font-size: 12px;
+color: #ffcd05;
+border-left: 2px solid #dddcdc;
+padding-left: 7px;
+}
+
+.ftr-titel {
+margin-bottom: 10px;
+margin-top: 30px;
+}
+
+.ftr-titel h6 {
+font-size: 21px;
+border-left: 2px solid #088fb0;
+padding-left: 7px;
+color:#fff
+}
+
+.ftrlist .new:after {
+font-size: 12px;
+padding: 0px 5px;
+margin-left: 5px;
+}
+
+.ftrlist .new:after {
+content: 'New';
+background-color: #1BB7D0;
+color: #fff;
+}
+
+.ftrlist ul li.new:hover::after {
+margin-left: 20px;
+}
+
+.ftrlist a:hover:before {
+width: 90% !important;
+}
+
+.ftrlist li:hover.new:after {
+transform: translate(13px, 0px);
+transition: 0.7s ease;
+}
+
+.ftr-titel h6 {
+font-size: 30px;
+border-left: 2px solid #088fb0;
+padding-left: 7px;
+color: rgb(255, 255, 255) !important;
+}
+
+/* 	10-04-2023 start */
+
+.ftr-titel {
+width: fit-content;
+position: relative
+}
+
+.ftr-titel:before {
+content: "";
+position: absolute;
+left: 0;
+width: 2px;
+height: 60%;
+background: #ffcb05;
+}
+
+.ftr-titel a {
+transition: transform 1.5s;
+-webkit-align-items: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: start;
+-webkit-justify-content: flex-start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+position: relative;
+width: fit-content;
+display: inline-flex;
+cursor: pointer;
+opacity: 1;
+overflow: hidden;
+left: 10px;
+}
+
+.ftr-titel h6 {
+padding-left: 0px;
+border-left: 0px;
+padding-bottom: 3.5px;
+color:#fff;
+}
+
+.ftr-titel .neg {
+transform: translate(100%, -100%);
+-webkit-transform: translateX(-103%);
+-ms-transform: translateX(-103%);
+opacity: 0;
+}
+
+.ftr-titel .spanbg {
+transition: transform 1.5s;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 0;
+border-bottom: 2px solid #088fb0;
+background: transparent;
+}
+
+.ftr-titel .cgqhmx {
+transition: transform 1.5s;
+display: block;
+padding-right: 15px;
+}
+
+/* 	10-04-2023 end */
+
+/* Footer columns use swiper markup but are never initialised as a slider,
+   so lay them out as a wrapping grid instead of a fixed 4-up row. */
+.footer-Links .footer-wrapper {
+flex-wrap: wrap;
+height: auto;
+transform: none;
+}
+
+.footer-Links .footer-wrapper > .swiper-slide {
+height: auto;
+padding-right: 15px;
+}
+
+@media (max-width: 991px) {
+.footer-Links .footer-wrapper > .swiper-slide {
+width: 50%;
+}
+}
+
+@media (max-width: 575px) {
+.footer-Links {
+margin-top: 0 !important;
+}
+
+.footer-Links .footer-wrapper > .swiper-slide {
+width: 100%;
+padding-right: 0;
+}
+
+.footer-Links .ftr-titel h6 {
+font-size: 22px;
+}
+}
