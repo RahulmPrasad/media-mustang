@@ -23,12 +23,13 @@ export const metadata = {
   icons: { icon: "/assets/images/tit-logo.png" },
 };
 
-// Applies the saved (or system) theme before first paint.
-const themeScript = `(function(){try{var t=localStorage.getItem('mustang-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
+// The page is rendered dark; this switches to light before first paint only
+// if the visitor chose light earlier.
+const themeScript = `(function(){try{if(localStorage.getItem('mustang-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();`;
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

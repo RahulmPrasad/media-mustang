@@ -58,7 +58,7 @@ export default function Testimonials() {
               <div className="swiper-slide">
                 <div className="single-testimonials-4">
                   <div className="icon">
-                    <img src="/assets/images/testimonials/shape/05.png" alt="testimonials" />
+                    <img src="/assets/images/testimonials/logo/quote.png" alt="testimonials" />
                   </div>
                   <p className="disc">“I don’t see anyone else in this space providing the level of insight brings to the table. They understand data beyond the vanity metrics often provided – true impactful results.”</p>
                   <div className="author">
@@ -71,7 +71,7 @@ export default function Testimonials() {
               <div className="swiper-slide">
                 <div className="single-testimonials-4">
                   <div className="icon">
-                    <img src="/assets/images/testimonials/shape/05.png" alt="testimonials" />
+                    <img src="/assets/images/testimonials/logo/quote.png" alt="testimonials" />
                   </div>
                   <p className="disc">“I don’t see anyone else in this space providing the level of insight brings to the table. They understand data beyond the vanity metrics often provided – true impactful results.”</p>
                   <div className="author">

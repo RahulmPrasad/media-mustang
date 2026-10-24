@@ -10,9 +10,7 @@ export default function Header() {
             <div className="header-style-one-wrapper">
               <div className="logo-area">
                 <Link href="/" className="logo">
-                  <img className="light" src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="" />
-                  {" "}
-                  <img className="dark" src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="logo" />
+                  <img src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="logo" />
                 </Link>
               </div>
               <nav className="main-nav-area">

@@ -102,9 +102,7 @@ export default function Footer({ copyright = "© 2024 Media Mustang Copyright Po
           <div className="col-lg-12">
             <div className="copyright-area-four pt--65 mt-65 border-top">
               <a href="#" className="logo">
-                <img className="light" src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="" />
-                {" "}
-                <img className="dark" src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="logo" />
+                <img src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="logo" />
               </a>
               <p>{copyright}</p>
             </div>

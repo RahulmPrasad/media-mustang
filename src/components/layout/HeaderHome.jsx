@@ -9,9 +9,7 @@ export default function HeaderHome() {
           <div className="col-lg-12">
             <div className="header-two-content-main">
               <Link href="/" className="logo-area">
-                <img className="light" src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="" />
-                {" "}
-                <img className="dark" src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="logo" />
+                <img src="/assets/images/logo/logo-dark.png" width="250" height="40" alt="logo" />
               </Link>
               <nav className="main-nav-area">
                 <ul className="list-unstyled mustang-desktop-menu">

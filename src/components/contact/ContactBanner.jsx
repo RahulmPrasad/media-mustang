@@ -16,15 +16,6 @@ export default function ContactBanner() {
           </div>
         </div>
       </div>
-      <div className="shape-area">
-        <img src="/assets/images/product/shape/01.png" alt="" className="one" />
-        {" "}
-        <img src="/assets/images/product/shape/02.png" alt="" className="two" />
-        {" "}
-        <img src="/assets/images/product/shape/03.png" alt="" className="three" />
-        {" "}
-        <img src="/assets/images/product/shape/04.png" alt="" className="four" />
-      </div>
     </div>
   );
 }
